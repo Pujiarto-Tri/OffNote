@@ -27,13 +27,13 @@ fun OrderSection(
             Spacer(modifier = Modifier.width(8.dp))
             DefultRadioButton(
                 text = "Date",
-                selected = noteOrder is NoteOrder.Title,
+                selected = noteOrder is NoteOrder.Date,
                 onSelect = { onOrderChange(NoteOrder.Date(noteOrder.orderType))}
             )
             Spacer(modifier = Modifier.width(8.dp))
             DefultRadioButton(
                 text = "Color",
-                selected = noteOrder is NoteOrder.Title,
+                selected = noteOrder is NoteOrder.Color,
                 onSelect = { onOrderChange(NoteOrder.Color(noteOrder.orderType))}
             )
         }
